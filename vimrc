@@ -4,7 +4,7 @@
 " http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 "
 " cd
-" git clone <URL> ~/.vim
+" git clone git@github.com:btauras/dotvim.git ~/.vim
 " ln -s ~/.vim/vimrc ~/.vimrc
 " ln -s ~/.vim/gvimrc ~/.gvimrc
 " cd ~/.vim
