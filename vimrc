@@ -1,4 +1,26 @@
 " vim: set et ts=2 sw=2 fileencoding=utf-8 fdm=marker:
+
+" setup {{{
+" http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+"
+" cd
+" git clone <URL> ~/.vim
+" ln -s ~/.vim/vimrc ~/.vimrc
+" ln -s ~/.vim/gvimrc ~/.gvimrc
+" cd ~/.vim
+" git submodule init
+" git submodule update
+"
+" nvim setup {{{{
+" https://vi.stackexchange.com/a/15057
+"
+" mkdir -p ~/.config/
+" ln -s ~/.vim ~/.config/nvim
+" ln -s ~/.vimrc ~/.config/nvim/init.vim
+"
+" }}}}
+" }}}
+
 set nocompatible
 
 " use pathogen as a bundle {{{
