@@ -3,8 +3,13 @@
 " setup {{{
 " http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
 "
-" cd
+" # clone with https
+" git clone https://github.com/btauras/dotvim.git ~/.vim
+"
+" # or clone with ssh
+" ssh -T git@github.com
 " git clone git@github.com:btauras/dotvim.git ~/.vim
+"
 " ln -s ~/.vim/vimrc ~/.vimrc
 " ln -s ~/.vim/gvimrc ~/.gvimrc
 " cd ~/.vim
