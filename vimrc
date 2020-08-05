@@ -1,4 +1,4 @@
-" vim: set et ts=2 sw=2 fileencoding=utf-8 fdm=marker:
+" vim: set et ai ts=2 sw=2 fdm=marker:
 
 " pathogen does not support full vim backwards-compatibility
 set nocompatible
