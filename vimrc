@@ -1,34 +1,6 @@
 " vim: set et ts=2 sw=2 fileencoding=utf-8 fdm=marker:
 
-" setup {{{
-" http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
-"
-" # clone with https
-" git clone https://github.com/btauras/dotvim.git ~/.vim
-"
-" # or clone with ssh
-" ssh -T git@github.com
-" git clone git@github.com:btauras/dotvim.git ~/.vim
-"
-" ln -s ~/.vim/vimrc ~/.vimrc
-" ln -s ~/.vim/gvimrc ~/.gvimrc
-" cd ~/.vim
-" git submodule init
-" git submodule update
-"
-" nvim setup {{{{
-" https://neovim.io/doc/user/nvim.html#nvim-from-vim
-"
-" # if windows, use ~/AppData/Local/nvim/init.vim
-" cat << EOF > ~/.config/nvim/init.vim
-" set runtimepath^=~/.vim runtimepath+=~/.vim/after
-" let &packpath=&runtimepath
-" source ~/.vimrc
-" EOF
-"
-" }}}}
-" }}}
-
+" pathogen does not support full vim backwards-compatibility
 set nocompatible
 
 " use pathogen as a bundle {{{
