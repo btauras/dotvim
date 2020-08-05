@@ -19,3 +19,12 @@
 [submodule "bundle/vim-solarized8"]
 	path = bundle/vim-solarized8
 	url = https://github.com/lifepillar/vim-solarized8.git
+[submodule "bundle/vim-code-dark"]
+	path = bundle/vim-code-dark
+	url = https://github.com/tomasiser/vim-code-dark.git
+[submodule "bundle/zenburn"]
+	path = bundle/zenburn
+	url = https://github.com/jnurmine/Zenburn.git
+[submodule "bundle/papercolor-theme"]
+	path = bundle/papercolor-theme
+	url = https://github.com/NLKNguyen/papercolor-theme.git
