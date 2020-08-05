@@ -17,11 +17,14 @@
 " git submodule update
 "
 " nvim setup {{{{
-" https://vi.stackexchange.com/a/15057
+" https://neovim.io/doc/user/nvim.html#nvim-from-vim
 "
-" mkdir -p ~/.config/
-" ln -s ~/.vim ~/.config/nvim
-" ln -s ~/.vimrc ~/.config/nvim/init.vim
+" # if windows, use ~/AppData/Local/nvim/init.vim
+" cat << EOF > ~/.config/nvim/init.vim
+" set runtimepath^=~/.vim runtimepath+=~/.vim/after
+" let &packpath=&runtimepath
+" source ~/.vimrc
+" EOF
 "
 " }}}}
 " }}}
@@ -41,8 +44,10 @@ syntax on
 filetype plugin indent on
 set background=dark
 set t_Co=256
-colorscheme desert
+"colorscheme desert
 "colorscheme solarized8
+colorscheme solarized
+highlight ColorColumn ctermbg=59
 set hlsearch
 nmap <Space> :nohlsearch<Bar>:echo<CR>
 set ignorecase
