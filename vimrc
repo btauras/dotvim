@@ -43,6 +43,7 @@ let g:netrw_winsize = 25
 let g:netrw_list_hide = '\(^\|\s\s\)\zs\.\S\+'
 " }}}
 " automatically load netrw file browser {{{
+" " or manually run :Vexplore, :Hexplore, :Sexplore, or :Explore
 " augroup ProjectDrawer
 "   autocmd!
 "   autocmd VimEnter * :Vexplore
