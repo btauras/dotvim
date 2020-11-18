@@ -56,7 +56,8 @@ http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-patho
     ```bash
     cd ~/.vim
     git submodule init
-    git submodule update
+    git submodule sync --recursive
+    git submodule update --recursive
     ```
 
 ### Nvim
