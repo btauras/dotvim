@@ -70,12 +70,12 @@ http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-patho
 
 Create an `init.vim` file for Nvim:
 
-    ```bash
-    cat << EOF > ~/.config/nvim/init.vim
-    set runtimepath^=~/.vim runtimepath+=~/.vim/after
-    let &packpath=&runtimepath
-    source ~/.vimrc
-    EOF
-    ```
+```bash
+cat << EOF > ~/.config/nvim/init.vim
+set runtimepath^=~/.vim runtimepath+=~/.vim/after
+let &packpath=&runtimepath
+source ~/.vimrc
+EOF
+```
 
 For Windows, use `$HOME/AppData/Local/nvim/init.vim` for the above.
