@@ -12,14 +12,17 @@ execute pathogen#infect()
 "call pathogen#helptags()
 " }}}
 
-syntax on
-filetype plugin indent on
+"set t_Co=256
 set background=dark
-set t_Co=256
+syntax enable
+filetype plugin indent on
+"let g:solarized_termcolors=256
 "colorscheme desert
-"colorscheme solarized8
+"colorscheme molokai
+"colorscheme zenburn
 colorscheme solarized
-highlight ColorColumn ctermbg=59
+highlight ColorColumn ctermbg=10
+
 set hlsearch
 nmap <Space> :nohlsearch<Bar>:echo<CR>
 set ignorecase
@@ -138,13 +141,13 @@ endif
 " }}}
 
 " better colors for vimdiff {{{
-if &diff
-  " windows git-bash 256 colors
-  "set t_Co=256
-  "set background=dark
-  colorscheme solarized8
-  "hi Comment ctermfg=cyan
-endif
+"if &diff
+"  " windows git-bash 256 colors
+"  "set t_Co=256
+"  "set background=dark
+"  colorscheme solarized8
+"  "hi Comment ctermfg=cyan
+"endif
 " }}}
 
 " disable syntax highlighting for files over 256KB {{{
