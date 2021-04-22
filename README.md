@@ -7,20 +7,13 @@ This repository is for maintaining a shared config for Vim and Nvim.
 ## Setup
 
 This section includes instructions for setting up the config with Vim and Nvim.
-The configs are shared, so the Vim section is a prerequisite to the Nvim
-section below.
+The Vim section is a prerequisite to the Nvim section below because the configs
+are shared.
 
-Linux instructions are written for bash. Windows instructions are written for
-the [Git SCM](https://git-scm.com/) shell (a.k.a. "git-bash").
+Linux instructions are written for [GNU Bash][]. Windows instructions are
+written for the [Git SCM][] shell (a.k.a. "Git Bash").
 
 ### Vim
-
-#### References:
-
-[Synchronizing plugins with git submodules and pathogen](
-http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/)
-
-#### Instructions:
 
 1. Clone repository:
 
@@ -44,7 +37,8 @@ http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-patho
     ln -s ~/.vim/gvimrc ~/.gvimrc
     ```
 
-    For Windows, use call `mklink` from Windows Command Prompt instead:
+    For Windows, use the [Windows command interpreter][]'s `mklink` command
+    instead:
 
     ```bash
     cmd //c mklink //j "$HOME/.vimrc" "$HOME/.vim/vimrc"
@@ -62,16 +56,11 @@ http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-patho
 
 ### Nvim
 
-#### References:
-
-[Transitioning from Vim](https://neovim.io/doc/user/nvim.html#nvim-from-vim)
-
-#### Instructions:
-
 Create an `init.vim` file for Nvim:
 
 ```bash
-cat << EOF > ~/.config/nvim/init.vim
+mkdir -p ~/.config/nvim/
+cat > ~/.config/nvim/init.vim << EOF
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath=&runtimepath
 source ~/.vimrc
@@ -79,3 +68,16 @@ EOF
 ```
 
 For Windows, use `$HOME/AppData/Local/nvim/init.vim` for the above.
+
+## References
+
+- [GNU Bash][]
+- [Git SCM][]
+- [Synchronizing plugins with git submodules and pathogen][]
+- [Transitioning to Nvim from Vim][nvim from vim]
+
+[GNU Bash]: https://www.gnu.org/software/bash/
+[Git SCM]: https://git-scm.com/
+[Windows command interpreter]: https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/cmd
+[Synchronizing plugins with git submodules and pathogen]: http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+[nvim from vim]: https://neovim.io/doc/user/nvim.html#nvim-from-vim
