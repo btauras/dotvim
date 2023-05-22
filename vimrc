@@ -29,6 +29,9 @@ nmap <Space> :nohlsearch<Bar>:echo<CR>
 set ignorecase
 set smartcase
 
+" enable extra python syntax highlighting from python-syntax
+let g:python_highlight_all = 1
+
 " can make underscore a word boundary for w/b commands
 " set iskeyword-=_
 
