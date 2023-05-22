@@ -22,6 +22,7 @@ filetype plugin indent on
 "colorscheme zenburn
 colorscheme solarized
 highlight ColorColumn ctermbg=10
+call togglebg#map("<F5>")
 
 set hlsearch
 nmap <Space> :nohlsearch<Bar>:echo<CR>
