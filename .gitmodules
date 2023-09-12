@@ -40,3 +40,9 @@
 [submodule "bundle/STL-Syntax"]
 	path = bundle/STL-Syntax
 	url = https://github.com/Mizuchi/STL-Syntax.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = https://github.com/tpope/vim-repeat.git
