@@ -16,11 +16,14 @@ execute pathogen#infect()
 set background=dark
 syntax enable
 filetype plugin indent on
-"let g:solarized_termcolors=256
-"colorscheme desert
-"colorscheme molokai
-"colorscheme zenburn
-colorscheme solarized
+" disable color schemes for vscode terminal
+if $TERM_PROGRAM != "vscode"
+  "let g:solarized_termcolors=256
+  "colorscheme desert
+  "colorscheme molokai
+  "colorscheme zenburn
+  colorscheme solarized
+endif
 highlight ColorColumn ctermbg=10
 call togglebg#map("<F5>")
 
