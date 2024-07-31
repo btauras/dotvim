@@ -49,9 +49,9 @@ written for the [Git SCM][] shell (a.k.a. "Git Bash").
 
     ```bash
     cd ~/.vim
-    git submodule init
     git submodule sync --recursive
-    git submodule update --recursive
+    git submodule update --recursive --init
+    git submodule foreach --recursive git pull
     ```
 
 ### Nvim
